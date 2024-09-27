@@ -1,6 +1,9 @@
-# IDEs
-.fleet/
-.idea/
-
 # Assets
 assets/
+assets*
+
+# ZIPed files
+*.zip
+
+# Zone Identifier files
+*Zone.Identifier
