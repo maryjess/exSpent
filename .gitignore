@@ -2,8 +2,7 @@
 .idea/
 
 # Assets
-assets/
-assets*
+asset*
 
 # ZIPed files
 *.zip
