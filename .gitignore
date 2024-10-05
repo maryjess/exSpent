@@ -1,58 +1,60 @@
-# IDEs
-.idea/
-
-# Assets
+# Assets, packaged files
 asset*
-
-# ZIPed files
 *.zip
 
-# Zone Identifier files
-*Zone.Identifier
+# Misc, IDEs
+.env
+.vscode/
+.idea/
+
+# Logs
+*.log*
+
+# React Native Packager
+.expo/
+.expo-shared/
+node_modules/
+package-lock.json
+yarn.lock
 
 # OSX
-#
 .DS_Store
 
 # Xcode
-#
 build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
 xcuserdata
+DerivedData
+
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
 *.xccheckout
 *.moved-aside
-DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
 **/.xcode.env.local
 
-# Android/IntelliJ
-build/
-.idea
-.gradle
-local.properties
+# Android / IntelliJ
+android/*
+.cxx/
 *.iml
 *.hprof
-.cxx/
+.gradle
 *.keystore
-!debug.keystore
-
-# node.js
-node_modules/
-npm-debug.log
-yarn-error.log
+*Zone.Identifier
+local.properties
 
 # fastlane
 #
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
@@ -62,64 +64,34 @@ yarn-error.log
 **/fastlane/screenshots
 **/fastlane/test_output
 
-# Bundle artifact
+# Bundle artifacts
+*.bundle
 *.jsbundle
 
 # Ruby / CocoaPods
 **/Pods/
 /vendor/bundle/
 
+# Metro
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
-
-# testing
-/coverage
-
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# React Native Packager
-.expo/
-.expo-shared/
-node_modules/
-package-lock.json
-yarn.lock
-
-# macOS
-.DS_Store
-
-# Android
-android/.gradle/
-android/app/build/
-android/app/debug.keystore
-
-# iOS
-ios/Pods/
-ios/build/
-ios/DerivedData/
-
-# TypeScript
-*.tsbuildinfo
-
-# Jest
-coverage/
-.jest/
-
-# Metro
 # React Native cache directory
 /metro-cache/
 /react-native/packager-cache-*
 
-# Misc
-.env
+# Yarn
+.yarn/*
+
+# iOS
+ios/*
+
+# TypeScript.
+# Do we want to use TS though? see Issue #22
+*.tsbuildinfo
+
+# Jest.
+# Are we using Jest? see Issue #23
+.jest/
+coverage/
+*.test.ts
+*.test.js
