@@ -14,7 +14,6 @@ asset*
 .expo/
 .expo-shared/
 node_modules/
-package-lock.json
 yarn.lock
 
 # OSX
